@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-image: url("images/bg-pattern-desktop.svg");
+    display: flex;
+    width: 100%;
+}
+
+
+.full-content{
+    margin: 70px 150px;
+    width: 65%;
+}
+
+.content-head{
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.content-head p{
+    color: pink;
+    font-size: 2em;
+    letter-spacing: 10px;
+}
+
+.content-head b{
+    color: black;
+}
+
+.content-body{
+    margin-top: 25px;
+    color: rgb(223, 173, 181);
+}
+
+.content-footer{
+    margin-top: 25px;
+}
+
+.submit-email{
+    display: flex;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: pink;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: pink;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: pink;
+}
+
+.icon-error{
+    margin-left: 50px;
+}
+.submit-email a img {
+    margin-top: 5px;
+    margin-left: -80px;  
+}
+
+.form-group{
+    width: 350px;
+    height: 35px;
+    border: none;
+    border: grey 1px solid;
+    border-radius: 20px;
+    color: black;
+}
+
+
+input{
+    text-indent: 20px;
+
+}
+
+button{
+    margin-left: -50px;
+    height: 37px;
+    width: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 161, 175);
+}
+
+button:active{
+    background-color: rgb(252, 216, 222);
+}
+
+#error-message{
+    color: rgb(255, 161, 175);
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    margin-top: 70px;
+    
+}
+
+footer a{
+    text-transform: capitalize;
+}
+/*=================================    Hero =========================*/
+
+.hero-picture{
+    width: 40%;
+}
+
+.hero-picture img{
+    height: 99vh;
+}
+
+
+/*=======================   Responsive  ========================*/
+
+@media only screen and (max-width: 900px) {
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .full-content{
+        width: 100%;
+        text-align: center;
+        display: flex;
+
+    }
+
+    .hero-picture{
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+
+    content{
+        position: absolute;
+        top: 600px;
+    }
+
+    .submit-email a img {
+        margin-top: 8px;
+        margin-left: -135px;  
+    }
+
+    #error-message{
+        color: rgb(255, 161, 175);
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+
+    footer{
+        position: absolute;
+        top: 950px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .attribution{
+        text-align: center;
+    }
+
+
+}

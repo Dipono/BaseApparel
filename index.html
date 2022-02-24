@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="full-content">
+    <header>
+      <img src="images/logo.svg" alt="logo">
+    </header>
+
+    <content>
+      <div class="content-head">
+        <p>We're <br> <b>coming <br> soon </b></p>
+      </div>
+      <div class="content-body">
+        <p>
+          Hello fellow shoppers! We're currently building our new <br>fashion store.
+          Add your email below to stay up-to-date with <br> announcements and our launch deals.
+        </p>
+      </div>
+
+      <div class="content-footer">
+
+        <div class="submit-email">
+          <input type="email" placeholder="Email Address" class="form-group" id="email">
+          <a href="#"><image src="images/icon-error.svg" width:50px; height:50px; id="icon-error"></a>
+          <button onclick="sendEmail()"><img src="images/icon-arrow.svg" alt="icon-arror"></button>
+        </div>
+        <p id="error-message"></p>
+      </div>
+
+    </content>
+
+
+    <footer>
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">dipono joel manasoe</a>.
+      </p>
+    </footer>
+  </div>
+
+
+  <div class="hero-picture">
+    <!--<img src="images/hero-desktop.jpg" alt="hero" id="hero">-->
+    <picture>
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 900px)">
+      <img src="images/hero-mobile.jpg" alt="hero">
+  </picture>
+  </div>
+
+</body>
+
+<script>
+    
+  let error_icon_hidden = document.getElementById('icon-error');
+  let outputEmail = document.getElementById('error-message');
+  let inputField = document.getElementById("email");
+
+  error_icon_hidden.hidden = true;
+
+/*
+
+  if(screenWidth < 720){
+    document.getElementById('hero').src = './images/favicon-32x32.png';
+  }
+  else{
+    document.getElementById('hero').src = './images/hero-desktop.jpg';
+  }
+  */
+
+  function sendEmail(){
+    error_icon_hidden.hidden = true;
+    outputEmail.innerHTML = ''
+    inputField.style.removeProperty('border')
+
+    let email = document.getElementById('email').value;
+    if(!email){
+      error_icon_hidden.hidden = false;
+      outputEmail.innerHTML= 'Enter Email';
+      inputField.style.border = "red solid 2px";
+      return
+    }
+
+    const regEx = /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/;
+    if (!regEx.test(email)){
+      error_icon_hidden.hidden = false;
+      outputEmail.innerHTML = 'Please provide a valid Email';
+      inputField.style.border = "red solid 2px";
+
+      return
+    }
+  }
+</script>
+
+</html>
