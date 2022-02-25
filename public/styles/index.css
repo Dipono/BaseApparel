@@ -4,36 +4,37 @@
 }
 
 body{
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    background-image: url("images/bg-pattern-desktop.svg");
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     width: 100%;
-
+    background-image: url('../images/bg-pattern-desktop.svg');
+    font-size: 16px;
 }
 
 .full-content{
-    margin: auto;;
-
+    margin: auto;
 }
 
 .content-head{
     margin-top: 100px;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
-.content-head p{
-    color: pink;
-    font-size: 2em;
+.content-head h1{
+    color: hsl(0, 36%, 70%);
     letter-spacing: 10px;
+    font-family: 400;
 }
 
 .content-head b{
     color: black;
+    font-weight: 600;
 }
 
 .content-body{
     margin-top: 25px;
-    color: rgb(223, 173, 181);
+    color: hsl(0, 36%, 70%);
 }
 
 .content-footer{
@@ -45,16 +46,16 @@ body{
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: pink;
+    color: hsl(0, 36%, 70%);
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: pink;
+    color: hsl(0, 36%, 70%);
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: pink;
+    color: hsl(0, 36%, 70%);
 }
 
 .icon-error{
@@ -86,7 +87,7 @@ button{
     width: 70px;
     border: none;
     border-radius: 20px;
-    background-color: rgb(255, 161, 175);
+    background-color: hsl(0, 80%, 77%);
 }
 
 button:active{
@@ -94,7 +95,7 @@ button:active{
 }
 
 #error-message{
-    color: rgb(255, 161, 175);
+    color: hsl(0, 93%, 68%);
     margin-top: 8px;
     margin-left: 20px;
 }

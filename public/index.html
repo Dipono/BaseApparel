@@ -22,6 +22,7 @@
     }
   </style>
   <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
 
     <content>
       <div class="content-head">
-        <p>We're <br> <b>coming <br> soon </b></p>
+        <h1>We're <br> <b>coming <br> soon </b></h1>
       </div>
       <div class="content-body">
         <p>
@@ -68,7 +69,9 @@
   <div class="hero-picture">
     <!--<img src="images/hero-desktop.jpg" alt="hero" id="hero">-->
     <picture>
-      <source srcset="images/hero-desktop.jpg" media="(min-width: 900px)">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 375px)">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 1440px)">
+
       <img src="images/hero-mobile.jpg" alt="hero">
   </picture>
   </div>
