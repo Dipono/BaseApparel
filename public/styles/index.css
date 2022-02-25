@@ -8,12 +8,12 @@ body{
     background-image: url("images/bg-pattern-desktop.svg");
     display: flex;
     width: 100%;
+
 }
 
-
 .full-content{
-    margin: 70px 150px;
-    width: 65%;
+    margin: auto;;
+
 }
 
 .content-head{
@@ -109,16 +109,14 @@ footer{
 footer a{
     text-transform: capitalize;
 }
-/*=================================    Hero =========================*/
+/*============================= Hero =========================*/
 
 .hero-picture{
-    width: 40%;
 }
 
 .hero-picture img{
     height: 99vh;
 }
-
 
 /*=======================   Responsive  ========================*/
 
@@ -175,6 +173,4 @@ footer a{
     .attribution{
         text-align: center;
     }
-
-
 }
