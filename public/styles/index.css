@@ -9,6 +9,8 @@ body{
     width: 100%;
     background-image: url('../images/bg-pattern-desktop.svg');
     font-size: 16px;
+    color: black;
+
 }
 
 .full-content{
@@ -109,11 +111,18 @@ footer{
 
 footer a{
     text-transform: capitalize;
+    font-weight: 600;
 }
-/*============================= Hero =========================*/
 
-.hero-picture{
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color:hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
 }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/*============================= Hero =========================*/
 
 .hero-picture img{
     height: 99vh;
