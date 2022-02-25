@@ -10,7 +10,6 @@ body{
     background-image: url('../images/bg-pattern-desktop.svg');
     font-size: 16px;
     color: black;
-
 }
 
 .full-content{
@@ -130,15 +129,38 @@ footer a{
 
 /*=======================   Responsive  ========================*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 375px) {
     body{
         display: flex;
         flex-direction: column-reverse;
         position: relative;
         padding: 0;
         margin: 0;
+        text-align: center;
     }
 
+    .content-body{
+        margin: 25px;
+    }
+
+    .content-body br{
+        content: ' ';
+    }
+
+    .submit-email{
+        margin: 35px 15px 0 15px;
+    }
+
+    header{
+        position: absolute;
+        top: 25px;
+        left: 10%px;
+    }
+
+    .hero-picture{
+        margin-top:75px;
+    }
+/*
     header{
         position: absolute;
         top: 20px;
@@ -182,5 +204,5 @@ footer a{
 
     .attribution{
         text-align: center;
-    }
+    }*/
 }
